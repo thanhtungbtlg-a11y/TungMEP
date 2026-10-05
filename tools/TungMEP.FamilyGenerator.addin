@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>TungMEP Family Generator</Name>
+    <Assembly>C:\Users\NITRO 5\Downloads\tung_mep\tools\TungMEP.FamilyGenerator.dll</Assembly>
+    <AddInId>86F52BB8-E886-44AD-9A85-7962C81AB9F2</AddInId>
+    <FullClassName>TungMEP.Tools.FamilyGeneratorApplication</FullClassName>
+    <VendorId>TUNG</VendorId>
+    <VendorDescription>Temporary test family generator</VendorDescription>
+  </AddIn>
+</RevitAddIns>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>TungMEP</Name>
+    <Assembly>C:\Users\tungnt2303\Downloads\tung_mep\bin\net48\TungMEP.Loader.dll</Assembly>
+    <AddInId>82718F2F-609B-47AF-AD9E-3D40604DD102</AddInId>
+    <FullClassName>TungMEP.Loader.Application</FullClassName>
+    <VendorId>TUNG</VendorId>
+    <VendorDescription>Tung MEP tools for Autodesk Revit</VendorDescription>
+  </AddIn>
+</RevitAddIns>

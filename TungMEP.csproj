@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F53E36A7-AFF2-4F5E-A1E0-B90B2CFBD3F0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TungMEP</RootNamespace>
+    <AssemblyName>TungMEP.Addin.v5</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OutputPath>bin\net48\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="RevitAPI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2024\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2024\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\Core\Application.cs" />
+    <Compile Include="src\Core\IToolModule.cs" />
+    <Compile Include="src\Core\RibbonBuilder.cs" />
+    <Compile Include="src\Core\RibbonIconFactory.cs" />
+    <Compile Include="src\Modules\AutoSprinkler\AutoSprinklerCommand.cs" />
+    <Compile Include="src\Modules\AutoSprinkler\AutoSprinklerModule.cs" />
+    <Compile Include="src\Modules\AutoSprinkler\BoundaryStyleCommand.cs" />
+    <Compile Include="src\Modules\AutoSprinkler\AlignedBranchPlanner.cs" />
+    <Compile Include="src\Modules\AutoSprinkler\SmartCoveragePlanner.cs" />
+    <Compile Include="src\Modules\AutoSprinkler\SprinklerSettingsForm.cs" />
+    <Compile Include="src\Modules\AutoSprinkler\LastUsedSelectionStore.cs" />
+    <Compile Include="src\Modules\Grids\GridModeCommand.cs" />
+    <Compile Include="src\Modules\Grids\GridBubbleArrangeCommand.cs" />
+    <Compile Include="src\Modules\Dimensions\AutoDimensionCommand.cs" />
+    <Compile Include="src\Modules\Dimensions\AutoDimensionForm.cs" />
+    <Compile Include="src\Modules\Dimensions\AutoDimensionReferenceProvider.cs" />
+    <Compile Include="src\Modules\Dimensions\AutoDimensionSettings.cs" />
+    <Compile Include="src\Modules\Dimensions\AutoDimensionSettingsStore.cs" />
+    <Compile Include="src\Modules\Dimensions\DimensionChainPlanner.cs" />
+    <Compile Include="src\Modules\MepTools\MepAlignCommand.cs" />
+    <Compile Include="src\Modules\MepTools\MepCopyCommand.cs" />
+    <Compile Include="src\Modules\MepTools\MepSplitCommand.cs" />
+    <Compile Include="src\Modules\MepTools\MepSplitByLevelCommand.cs" />
+    <Compile Include="src\Modules\MepTools\AdvancedMepLayoutCommands.cs" />
+    <Compile Include="src\Modules\Productivity\ProductivityToolsCommand.cs" />
+    <Compile Include="src\Modules\Productivity\ProductivityToolHistoryStore.cs" />
+    <Compile Include="src\Modules\Productivity\SelectionParameterSupport.cs" />
+    <Compile Include="src\Modules\Productivity\VgFilterFromSelectionCommand.cs" />
+    <Compile Include="src\Modules\Productivity\ScheduleFromSelectionCommand.cs" />
+    <Compile Include="src\Modules\Selection\QuickSelectCommand.cs" />
+    <Compile Include="src\Modules\Tags\AutoTagCommand.cs" />
+    <Compile Include="src\Modules\Tags\AutoTagArrowheadSupport.cs" />
+    <Compile Include="src\Modules\Tags\AutoTagForm.cs" />
+    <Compile Include="src\Modules\Tags\AutoTagSettings.cs" />
+    <Compile Include="src\Modules\Tags\AutoTagSettingsStore.cs" />
+    <Compile Include="src\Modules\Tags\AnnotationArrangeCommand.cs" />
+    <Compile Include="src\Modules\Tags\AnnotationArrangeForm.cs" />
+    <Compile Include="src\Modules\Tags\AnnotationArrangeSettings.cs" />
+    <Compile Include="src\Modules\Tags\AnnotationArrangeSettingsStore.cs" />
+    <Compile Include="src\Modules\Tags\PlumbingFixtureAutoTagCommand.cs" />
+    <Compile Include="src\Modules\Tags\PlumbingFixtureAutoTagForm.cs" />
+    <Compile Include="src\Modules\Tags\UniversalMepAutoTagForm.cs" />
+    <Compile Include="src\Modules\Tags\UniversalMepAutoTagSettings.cs" />
+    <Compile Include="src\Modules\Tags\UniversalMepAutoTagSettingsStore.cs" />
+    <Compile Include="src\Modules\Tags\SmartMepAnnotationCommand.cs" />
+    <Compile Include="src\Modules\Tags\SmartMepAnnotationForm.cs" />
+    <Compile Include="src\Modules\Tags\SmartMepAnnotationSettings.cs" />
+    <Compile Include="src\Modules\Tags\SmartMepAnnotationSettingsStore.cs" />
+    <Compile Include="src\Modules\Tags\MepDocumentationDimensioner.cs" />
+    <Compile Include="src\Modules\Views\BatchViewCopyCommand.cs" />
+    <Compile Include="src\Modules\Views\DraftingToLegendCommand.cs" />
+    <Compile Include="src\Modules\Views\SheetRenumberCommand.cs" />
+    <Compile Include="src\Modules\Views\ViewSheetAutomationCommand.cs" />
+    <Compile Include="src\Modules\Views\ViewSheetAutomationForm.cs" />
+    <Compile Include="src\Modules\Views\ViewSheetAutomationSettings.cs" />
+    <Compile Include="src\Modules\Views\ViewSheetAutomationSettingsStore.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

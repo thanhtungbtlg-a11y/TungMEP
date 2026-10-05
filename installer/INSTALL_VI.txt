@@ -1,0 +1,59 @@
+TUNG MEP FOR REVIT 2024
+=======================
+
+CAI DAT
+1. Dong Autodesk Revit 2024.
+2. Chay TungMEP_Setup_1.8.2_Revit2024.exe.
+3. Mo lai Revit 2024 va tim tab Tung MEP.
+4. Neu may co pyRevit, bo cai tu dong tao tab rieng "Tung MEP QA" voi cac panel
+   "Project QA" va "pyRevit Companion". Tab rieng nay khong anh huong cac tool C#
+   tren tab "Tung MEP" khi dung pyRevit Reload.
+
+DUONG DAN CAI DAT
+- Chuong trinh: %LOCALAPPDATA%\TungMEP\Revit2024
+- Revit manifest: %APPDATA%\Autodesk\Revit\Addins\2024\TungMEP.addin
+- pyRevit Companion (tuy chon): %APPDATA%\pyRevit\Extensions\TungMEP.extension
+
+GO CAI DAT
+Mo Windows Settings > Apps > Installed apps, tim "Tung MEP for Revit 2024" va chon Uninstall.
+
+LUU Y
+- Bo cai nay chi danh cho Autodesk Revit 2024 64-bit.
+- File chua co chu ky so. Windows co the hien canh bao Unknown Publisher.
+- Dong Revit truoc khi cai dat, nang cap hoac go cai dat.
+- Smart Auto Tag MEP can project co san Pipe Tag Type. Noi dung System/DN/Slope/BOP
+  duoc dieu khien boi Tag Family dang chon. Tham so BOP tuy chon mac dinh la
+  TungMEP_BOP_FFL va co the doi trong hop thoai.
+- Universal Auto Tag MEP can project co san Tag Family Type cho tung category da chon.
+  Tool chi xu ly family instance trong model hien tai va khong xoa tag thu cong.
+- Smart Annotation Arrange sap xep Independent Tag va Text Note theo cac che do
+  Align, Distribute, Compact, Smart Rail va Reflow. Preview co the Apply hoac huy
+  de khoi phuc toan bo vi tri ban dau.
+  Co the tu chia tag thanh hai rail trai/phai theo cum nguon hoac giu nhom
+  trai/phai hien tai de tao bo cuc chu thich hai ben thiet bi.
+- Documentation Rail tim nhieu rail, vi tri va thu tu de giam leader giao nhau,
+  tranh chu de len model. Co the tat tuy chon optimize de dung lai cach bo tri cu.
+- Smart MEP Annotation Pack co tuy chon tao native dimension den grid gan nhat va
+  dimension cao do den level trong section/elevation neu co Revit reference hop le.
+- MEP SLIPT BY LEVEL cat Pipe, Duct, Conduit va Cable Tray tai cac Level duoc chon.
+  Cac vi tri Level cham fitting/accessory se duoc bo qua theo khoang an toan da dat.
+  Co the tao union fitting tai cac diem cat neu Routing Preferences ho tro.
+- Panel TungMEP Control gom Repeat Last TungMEP va Reload TungMEP.
+- MEP Align, MEP Copy va Quick Select da duoc go khoi ribbon va launcher.
+- More Tools co Align Objects by BOP va Equal Spacing de can cao do day va gian deu
+  Pipes/Ducts/Conduits/Cable Trays cung cac family MEP duoc ho tro.
+- VG Filter from Selection tao Parameter Filter native tu category va gia tri parameter
+  cua doi tuong dang chon; co the ap dung ngay vao active view.
+- Schedule from Selection tao Schedule native cho mot category, them cac field huu ich
+  va co the loc theo mot parameter co cung gia tri tren tat ca doi tuong da chon.
+- Sheet Renumber tu dong danh dau cac Sheet da preselect, co cay thu muc theo prefix
+  Sheet Number, tim kiem nhanh va van giu bang preview so moi.
+- View & Sheet Automation hien live preview ten View, so/ten Sheet va nhom viewport
+  truoc khi tao; ten trung duoc mo phong dung theo quy tac them hau to cua tool.
+- Grid Bubble Arrange dan cac bong bong Grid dang chong lan bang 2D leader trong view.
+  Duong Grid model va native Grid reference khong bi di chuyen.
+- pyRevit Companion la tuy chon. TungMEP van hoat dong day du neu may khong cai pyRevit.
+  Panel Project QA co MEP Health Dashboard de quet connector ho, System Type, size,
+  offset bat thuong, tag con thieu trong view va Revit warning lien quan MEP.
+  Dashboard chi doc model va co link Select/Zoom tung phan tu; khong tu sua hoac xoa.
+  Companion cung cap launcher tim kiem nhanh, Repeat Last, Reload Payload va Diagnostics.

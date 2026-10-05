@@ -1,0 +1,3 @@
+title: "Diagnostics"
+tooltip: "Inspect the TungMEP loader, current payload, last-command history, active Revit document, and pyRevit engine."
+author: "TungMEP"

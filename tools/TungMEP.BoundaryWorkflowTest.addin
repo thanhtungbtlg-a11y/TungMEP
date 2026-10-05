@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>TungMEP Boundary Workflow Test</Name>
+    <Assembly>C:\Users\NITRO 5\Downloads\tung_mep\tools\TungMEP.BoundaryWorkflowTest.dll</Assembly>
+    <AddInId>2E81D2CF-5F23-466E-89DB-C1992D277A1B</AddInId>
+    <FullClassName>TungMEP.Tools.BoundaryWorkflowTestApplication</FullClassName>
+    <VendorId>TUNG</VendorId>
+    <VendorDescription>Temporary boundary workflow test</VendorDescription>
+  </AddIn>
+</RevitAddIns>

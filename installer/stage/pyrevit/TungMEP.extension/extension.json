@@ -1,0 +1,13 @@
+{
+  "builtin": "False",
+  "default_enabled": "True",
+  "type": "extension",
+  "rocket_mode_compatible": "False",
+  "name": "TungMEP Companion",
+  "description": "TungMEP pyRevit tools for MEP health auditing, fast command launch, repeat, reload, and diagnostics.",
+  "author": "TungMEP",
+  "url": "",
+  "website": "",
+  "image": "",
+  "dependencies": []
+}
